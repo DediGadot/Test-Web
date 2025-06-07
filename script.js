@@ -159,12 +159,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Simple validation
             if (!name || !email || !message) {
-                showNotification('Please fill in all required fields.', 'error');
+                showNotification('[ERROR] Missing required data fields.', 'error');
                 return;
             }
             
             if (!isValidEmail(email)) {
-                showNotification('Please enter a valid email address.', 'error');
+                showNotification('[ERROR] Invalid email format detected.', 'error');
                 return;
             }
             
@@ -172,12 +172,12 @@ document.addEventListener('DOMContentLoaded', function() {
             const submitButton = contactForm.querySelector('button[type="submit"]');
             const originalText = submitButton.innerHTML;
             
-            submitButton.innerHTML = 'Sending... <span class="btn-arrow">⟳</span>';
+            submitButton.innerHTML = '> ENCRYPTING... <span class="btn-arrow">⟳</span>';
             submitButton.disabled = true;
             
             // Simulate API call
             setTimeout(() => {
-                showNotification('Message sent successfully! We\'ll get back to you within 24 hours.', 'success');
+                showNotification('[SUCCESS] Encrypted transmission complete. Expect secure contact within 24 hours.', 'success');
                 contactForm.reset();
                 submitButton.innerHTML = originalText;
                 submitButton.disabled = false;
@@ -385,21 +385,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Console easter egg for developers
 console.log(`
-🔐 Public Key Group LTD - Security Console
-==========================================
+₿ PUBLIC KEY GROUP LTD - UNDERGROUND TERMINAL
+============================================
 
-Interested in our code? We're always looking for talented developers!
-Check our security practices:
-- Content Security Policy implemented
-- XSS protection enabled  
-- HTTPS enforced
-- Regular security audits
+[CLASSIFIED] Interested in our code? We need elite hackers!
+Security protocols:
+- Zero-knowledge architecture
+- Air-gapped development
+- Quantum-resistant encryption
+- No logs, no traces
 
-Contact: security@publickeygroup.com
+Contact: secure@publickeygroup.com [PGP REQUIRED]
 
-Remember: Never trust, always verify! 🛡️
+Remember: Don't trust, verify. Stay paranoid. ₿
 `);
 
 // Add some console styling
-console.log('%c🔐 SECURE CONNECTION ESTABLISHED', 'color: #00f5ff; font-weight: bold; font-size: 16px;');
-console.log('%cPublic Key Group LTD - Your crypto security partner', 'color: #00ff88; font-size: 12px;'); 
+console.log('%c₿ UNDERGROUND CONNECTION ESTABLISHED', 'color: #d4af37; font-weight: bold; font-size: 16px;');
+console.log('%cPublic Key Group LTD - Your Bitcoin security specialists', 'color: #b8860b; font-size: 12px;'); 
