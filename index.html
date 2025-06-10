@@ -3,313 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Key Group LTD - Elite Bitcoin Security Solutions</title>
-    <meta name="description" content="Public Key Group LTD provides cutting-edge cybersecurity solutions specifically for Bitcoin. Protecting your Bitcoin wealth with enterprise-grade security and multi-signature technology.">
+    <title>Meganet - Traffic Monetization Solutions</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="loading-screen" id="loadingScreen">
-        <div class="loading-animation">
-            <div class="loading-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-content">
+            <p>We use essential cookies to make our site work. With your consent, we may also use non-essential cookies to improve user experience, personalize advertisements, and analyze web traffic. For these reasons, we may share your site usage data with our advertising and analytics partners. By clicking "Accept," you agree to our website's cookie use as described in our Cookie Policy. You can change your cookie settings at any time by clicking "Preferences."</p>
+            <div class="cookie-buttons">
+                <button id="declineCookies">Decline</button>
+                <button id="acceptCookies">Accept</button>
             </div>
-            <p>> INITIALIZING QUANTUM ENCRYPTION...</p>
         </div>
     </div>
 
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-icon">₿</span>
-                <span class="logo-text">Public Key Group</span>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="logo">
+            <a href="/"><img src="logo.png" alt="Meganet Logo"></a>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <button class="dropbtn">Our Solutions <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <div class="dropdown-section">
+                        <a href="javascript:;">
+                            <h3>In-house Platform</h3>
+                            <p>Our in-house technology allows us to measure, optimize and react in real-time</p>
+                        </a>
+                    </div>
+                    <div class="dropdown-section">
+                        <a href="javascript:;">
+                            <h3>Browser Extensions</h3>
+                            <p>Add extra value and content for your users with browser extensions</p>
+                        </a>
+                    </div>
+                    <div class="dropdown-section">
+                        <a href="javascript:;">
+                            <h3>Search Traffic Monetization</h3>
+                            <p>Channeling valuable search traffic to your business</p>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#solutions" class="nav-link">Solutions</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="dropdown">
+                <button class="dropbtn">Our Group <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <div class="dropdown-section">
+                        <a href="javascript:;">
+                            <h3>About Us</h3>
+                            <p>Learn about Meganet and our mission</p>
+                        </a>
+                    </div>
+                    <div class="dropdown-section">
+                        <a href="javascript:;">
+                            <h3>Company</h3>
+                            <p>Our team and values</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="contact-btn">Contact Us</a>
+        </div>
+        <div class="login-btn">
+            <a href="javascript:;">Login</a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-bg">
-                <div class="grid-overlay"></div>
-                <div class="floating-particles"></div>
-            </div>
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    <span class="title-line">> SECURING YOUR</span>
-                    <span class="title-highlight">₿ITCOIN WEALTH</span>
-                </h1>
-                <p class="hero-subtitle">
-                    [CLASSIFIED] Enterprise-grade cybersecurity solutions designed specifically for Bitcoin. 
-                    Protect your stack with military-grade multi-sig protocols and air-gapped cold storage.
-                </p>
-                <div class="hero-actions">
-                    <button class="btn-primary" onclick="scrollToSection('contact')">
-                        > SECURE_MY_BITCOIN
-                        <span class="btn-arrow">→</span>
-                    </button>
-                    <button class="btn-secondary" onclick="scrollToSection('services')">
-                        > ACCESS_PROTOCOLS
-                    </button>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number" data-count="99.99">0</div>
-                        <div class="stat-label">Uptime %</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-count="2.1">0</div>
-                        <div class="stat-label">₿ Secured</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-count="24">0</div>
-                        <div class="stat-label">7 Support</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-content">
+            <!-- Mobile menu content will be populated by JavaScript -->
+        </div>
+    </div>
 
-        <section id="services" class="services">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">> BITCOIN_SECURITY_PROTOCOLS</h2>
-                    <p class="section-subtitle">[ACCESS_LEVEL: RESTRICTED] Comprehensive Bitcoin security solutions for HODLers and institutions</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">🛡️</div>
-                        <h3>Bitcoin Wallet Security</h3>
-                        <p>Advanced multi-signature Bitcoin wallet protection with hardware security modules (HSMs) and air-gapped cold storage solutions.</p>
-                        <ul class="service-features">
-                            <li>Multi-sig Bitcoin wallets</li>
-                            <li>Hardware wallet integration</li>
-                            <li>Air-gapped cold storage</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🔍</div>
-                        <h3>Bitcoin Transaction Analysis</h3>
-                        <p>Advanced Bitcoin blockchain analysis and transaction monitoring for compliance and security.</p>
-                        <ul class="service-features">
-                            <li>UTXO analysis & optimization</li>
-                            <li>Transaction privacy enhancement</li>
-                            <li>Compliance monitoring</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">⚡</div>
-                        <h3>Lightning Network Security</h3>
-                        <p>Secure Lightning Network node management and channel monitoring for instant Bitcoin payments.</p>
-                        <ul class="service-features">
-                            <li>Lightning node security</li>
-                            <li>Channel management</li>
-                            <li>Payment route optimization</li>
-                        </ul>
-                    </div>
-                    <div class="service-card">
-                        <div class="service-icon">🏢</div>
-                        <h3>Bitcoin Custody Solutions</h3>
-                        <p>Institutional-grade Bitcoin custody with insurance coverage and regulatory compliance.</p>
-                        <ul class="service-features">
-                            <li>Institutional custody</li>
-                            <li>Insurance coverage</li>
-                            <li>Regulatory compliance</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Unlock your full potential with Meganet's innovative solutions for Traffic Monetization</h1>
+            <a href="javascript:;" class="cta-button">Grow Your Business Today</a>
+        </div>
+    </section>
 
-        <section id="solutions" class="solutions">
-            <div class="container">
-                <div class="solutions-content">
-                    <div class="solutions-text">
-                        <h2>> WHY_TRUST_PKG.exe</h2>
-                        <p>[ENCRYPTED] We combine underground tech with deep Bitcoin protocol expertise. Unparalleled protection for your stack. No KYC, no surveillance, just pure security.</p>
-                        <div class="solutions-benefits">
-                            <div class="benefit">
-                                <div class="benefit-icon">🚀</div>
-                                <div class="benefit-text">
-                                    <h4>Advanced Technology</h4>
-                                    <p>Leveraging AI and machine learning for proactive threat detection</p>
-                                </div>
-                            </div>
-                            <div class="benefit">
-                                <div class="benefit-icon">₿</div>
-                                <div class="benefit-text">
-                                    <h4>Bitcoin-Specialized</h4>
-                                    <p>Deep understanding of Bitcoin protocol and Bitcoin-specific security challenges</p>
-                                </div>
-                            </div>
-                            <div class="benefit">
-                                <div class="benefit-icon">🏆</div>
-                                <div class="benefit-text">
-                                    <h4>Proven Track Record</h4>
-                                    <p>Trusted by leading Bitcoin exchanges and institutional Bitcoin investors</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="solutions-visual">
-                        <div class="security-dashboard">
-                            <div class="dashboard-header">
-                                <h3>Security Dashboard</h3>
-                                <div class="status-indicator active"></div>
-                            </div>
-                            <div class="dashboard-metrics">
-                                <div class="metric">
-                                    <span class="metric-label">Threat Level</span>
-                                    <span class="metric-value low">LOW</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-label">Active Shields</span>
-                                    <span class="metric-value">12/12</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-label">Last Scan</span>
-                                    <span class="metric-value">2 min ago</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stat-item">
+            <h4>Successful Partnerships</h4>
+            <div class="stat-number" data-count="500">0</div>
+        </div>
+        <div class="stat-item">
+            <h4>Geos Coverage</h4>
+            <div class="stat-number" data-count="190">0</div>
+        </div>
+        <div class="stat-item">
+            <h4>Daily Search Opportunities</h4>
+            <div class="stat-number" data-count="1000000">0</div>
+        </div>
+        <div class="stat-item">
+            <h4>Growth YOY</h4>
+            <div class="stat-number" data-count="200">0</div>
+            <span>%</span>
+        </div>
+        <div class="stat-item">
+            <h4>Platform Uptime</h4>
+            <div class="stat-number" data-count="99.9">0</div>
+            <span>%</span>
+        </div>
+    </section>
 
-        <section id="about" class="about">
-            <div class="container">
-                <div class="about-content">
-                    <h2>About Public Key Group LTD</h2>
-                    <p>Founded by cybersecurity experts and Bitcoin protocol specialists, Public Key Group LTD stands at the forefront of Bitcoin security innovation. Our mission is to make Bitcoin ownership safe, secure, and accessible for everyone from individual HODLers to major financial institutions.</p>
-                    <div class="company-values">
-                        <div class="value">
-                            <h4>Security First</h4>
-                            <p>Every solution is built with security as the primary consideration</p>
-                        </div>
-                        <div class="value">
-                            <h4>Innovation Driven</h4>
-                            <p>Constantly evolving to stay ahead of emerging threats</p>
-                        </div>
-                        <div class="value">
-                            <h4>Client Focused</h4>
-                            <p>Tailored solutions that meet your specific security requirements</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>> READY_TO_SECURE_STACK?</h2>
-                        <p>[CONTACT_PROTOCOL] Connect with our underground Bitcoin security specialists. Discuss your operational security needs. No surveillance, no logs, maximum paranoia.</p>
-                        <div class="contact-methods">
-                            <div class="contact-method">
-                                <div class="method-icon">📧</div>
-                                <div class="method-details">
-                                    <h4>Email</h4>
-                                    <p>security@publickeygroup.com</p>
-                                </div>
-                            </div>
-                            <div class="contact-method">
-                                <div class="method-icon">📞</div>
-                                <div class="method-details">
-                                    <h4>Phone</h4>
-                                    <p>+1 (555) PKG-SAFE</p>
-                                </div>
-                            </div>
-                            <div class="contact-method">
-                                <div class="method-icon">🌐</div>
-                                <div class="method-details">
-                                    <h4>24/7 Support</h4>
-                                    <p>Emergency response available</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" required>
-                                <label for="name">Full Name</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" required>
-                                <label for="email">Email Address</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="company" name="company">
-                                <label for="company">Company (Optional)</label>
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" required></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                            <button type="submit" class="btn-primary">
-                                > TRANSMIT_ENCRYPTED
-                                <span class="btn-arrow">→</span>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
+    <!-- About Us Section -->
+    <section class="about-section">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <span class="logo-icon">₿</span>
-                        <span class="logo-text">Public Key Group LTD</span>
-                    </div>
-                    <p>Securing Bitcoin wealth with enterprise-grade multi-signature and custody solutions.</p>
+            <h2>About Us</h2>
+            <p>Introducing Meganet, a leading AdTech company based in Hertzliya, Israel. We specialize in providing cutting-edge solutions that revolutionize the advertising industry. With our advanced technology and strategic insights, we help our partners reach and maximize their ROI.</p>
+            <p>At Meganet, we understand the ever-evolving digital landscape and our team of experts leverages data-driven strategies to deliver personalized and impactful advertising campaigns across various platforms. Whether it's programmatic advertising, media buying, or audience targeting, we have the expertise to optimize your ad campaigns and drive measurable results. Partner with Meganet and stay ahead of the curve in the dynamic world of AdTech.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="service-column">
+                <h2>Advertisers</h2>
+                <p>We successfully generate substantial high-quality traffic for our prominent advertisers, and are fully equipped and ready to replicate this remarkable achievement for your business. Your success is our priority, and we are committed to bringing the same level of dedication and expertise to our partnership.</p>
+            </div>
+            <div class="service-column">
+                <h2>Publishers</h2>
+                <p>We commit to provide our publishers with exceptional attention through personalized micro-management by our dedicated team, daily reporting, high payouts, and diverse Search feeds from Yahoo, Bing, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="offer-section">
+        <div class="container">
+            <h2>What we offer</h2>
+            <div class="offer-grid">
+                <div class="offer-item">
+                    <h4>In-house Platform</h4>
+                    <p>Our in-house technology allows us to measure, optimize and react in real-time to trends to increase revenue and provide the best performance</p>
                 </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">Bitcoin Wallet Security</a></li>
-                            <li><a href="#services">Transaction Analysis</a></li>
-                            <li><a href="#services">Lightning Network</a></li>
-                            <li><a href="#services">Bitcoin Custody</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                        </ul>
-                    </div>
+                <div class="offer-item">
+                    <h4>Browser Extensions</h4>
+                    <p>Browser extensions are an excellent tool for adding extra value and content for your users, plus they are available in most browsers. We can help you monetize your extension's users on any browser.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Search Traffic Monetization</h4>
+                    <p>We specialize in channeling valuable search traffic to your business as well as providing syndication platforms under BHS, YHS, N2S and more.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Optimized Ad Reach</h4>
+                    <p>Expand ad reach and improve efficiency with data-driven strategies that maximize visibility and performance.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Proficient AdTech Team</h4>
+                    <p>Our success is driven by dedicated team of AdTech specialists and software developers. With deep digital advertising expertise and a focus on industry trends, we create custom strategies, innovative solutions and tailor-made campaigns to achieve outstanding results for our valued clients.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Audience Targeting</h4>
+                    <p>Pinpoint your ideal audience and increase ad engagement with precise targeting.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Ad Performance Analytics</h4>
+                    <p>Gain insights into ad performance and optimize campaigns for better results.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Cross-Channel Ad Campagins</h4>
+                    <p>Crafted integrated ad campaigns across various digital channels to maximize reach and impact.</p>
+                </div>
+                <div class="offer-item">
+                    <h4>Fraud Detection</h4>
+                    <p>Implemented advanced fraud detection technology to ensure high-quality traffic.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Public Key Group LTD. All rights reserved. | Secured with SHA-256</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us Today</h2>
+            <h3>Ready To Empower Your Search Traffic Monetization? Let's Talk!</h3>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 4 Arie Shenkar St. Hertzliya, Israel</p>
+                <p><i class="fas fa-envelope"></i> contact@meganet.one</p>
+                <p><i class="fas fa-phone"></i> +972-732-757-493</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="First Name*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name*" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="captcha">
+                            <label>Please click the box:</label>
+                            <div class="checkbox-container">
+                                <input type="checkbox" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Our Solutions</h3>
+                <ul>
+                    <li><a href="javascript:;">In-house Platform</a></li>
+                    <li><a href="javascript:;">Browser Extensions</a></li>
+                    <li><a href="javascript:;">Search Traffic Monetization</a></li>
+                    <li><a href="javascript:;">Optimized Ad Reach</a></li>
+                    <li><a href="javascript:;">Audience Targeting</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="javascript:;">Who We Are</a></li>
+                    <li><a href="javascript:;">Our Mission</a></li>
+                    <li><a href="javascript:;">Our Vision</a></li>
+                    <li><a href="javascript:;">Our Values</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="javascript:;">Contact Us</a></li>
+                    <li><a href="javascript:;">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Meganet ©2025 All rights reserved</p>
+            <div class="footer-links">
+                <a href="javascript:;">Terms of Service</a>
+                <a href="javascript:;">Privacy Policy</a>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
