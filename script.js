@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelector('.nav-links').cloneNode(true);
     const loginBtn = document.querySelector('.login-btn').cloneNode(true);
     
+    // Clear existing content before appending
+    mobileNavContent.innerHTML = '';
     mobileNavContent.appendChild(navLinks);
     mobileNavContent.appendChild(loginBtn);
     
@@ -39,12 +41,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // Handle mobile dropdowns
+    const mobileDropdowns = mobileNav.querySelectorAll('.dropdown');
+    mobileDropdowns.forEach(dropdown => {
+        const dropBtn = dropdown.querySelector('.dropbtn');
+        dropBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+        });
+    });
+    
     // Stats Counter Animation
     const statNumbers = document.querySelectorAll('.stat-number');
     
     function animateStats() {
         statNumbers.forEach(stat => {
-            const target = parseInt(stat.getAttribute('data-count'));
+            const target = parseFloat(stat.getAttribute('data-count'));
             const duration = 2000; // 2 seconds
             const step = target / (duration / 16); // 60fps
             let current = 0;
@@ -53,9 +65,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 current += step;
                 if (current >= target) {
                     clearInterval(timer);
-                    stat.textContent = target.toLocaleString();
+                    // Format with appropriate decimal places for numbers like 99.9
+                    if (target % 1 !== 0) {
+                        stat.textContent = target.toFixed(1);
+                    } else {
+                        stat.textContent = target.toLocaleString();
+                    }
                 } else {
-                    stat.textContent = Math.floor(current).toLocaleString();
+                    if (target % 1 !== 0) {
+                        stat.textContent = current.toFixed(1);
+                    } else {
+                        stat.textContent = Math.floor(current).toLocaleString();
+                    }
                 }
             }, 16);
         });
@@ -70,6 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 observer.unobserve(entry.target);
             }
         });
+    }, {
+        threshold: 0.1 // Trigger when at least 10% of the element is visible
     });
     
     observer.observe(statsSection);

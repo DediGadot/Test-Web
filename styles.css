@@ -118,7 +118,6 @@ ul {
     padding: 20px;
     border-radius: 4px;
     left: -200px;
-    display: flex;
     flex-wrap: wrap;
 }
 
@@ -168,6 +167,42 @@ ul {
     z-index: 99;
     overflow-y: auto;
     padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav .nav-links {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mobile-nav .dropdown {
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.mobile-nav .dropdown-content {
+    position: static;
+    display: none;
+    width: 100%;
+    min-width: unset;
+    box-shadow: none;
+    padding: 10px 0 10px 20px;
+}
+
+.mobile-nav .dropdown.active .dropdown-content {
+    display: block;
+}
+
+.mobile-nav .contact-btn {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.mobile-nav .login-btn {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
 }
 
 /* Hero Section */
