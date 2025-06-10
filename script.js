@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize AOS animation library
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true
+    });
     // Cookie Banner
     const cookieBanner = document.getElementById('cookieBanner');
     const acceptCookies = document.getElementById('acceptCookies');
